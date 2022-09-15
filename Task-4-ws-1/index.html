@@ -4,23 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sedna</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <img src="/Task-4-ws-1/Images/sedna-logo.png" alt="Sedna Logo">
-    <nav>
-        <a href="#features">FEATURES</a>
-        <a href="#assets">ASSETS</a>
-        <a href="#blog">BLOG</a>
-        <a href="#download">DOWNLOAD</a>
-        <div>
-            <a href="#login">LOG IN</a>
-            <a href="#signup">SIGN UP</a>
-        </div>
-    </nav>
+   <header class="header">
+    <div class="container header__nav-bar --bottom-white-border-80">
+
+        <a href="#0" class="header__logo --margin-left-20 header__items"><img src="/Images/sedna-logo.png" alt="Sedna Logo" class="header__logo-img"></a>
+
+        <nav class="header__nav header__items">
+
+            <a href="#features" class="header__link">FEATURES</a>
+            <a href="#assets" class="header__link --margin-left-20">ASSETS</a>
+            <a href="#blog" class="header__link --margin-left-20">BLOG</a>
+            <a href="#download" class="header__link --margin-left-20">DOWNLOAD</a>
+
+            <div class="header__right">
+                <a href="#login" class="header__link">LOG IN</a>
+                <a href="#signup" class="header__link button btn--sm btn--white-outline --margin-left-20">SIGN UP</a>
+            </div>
+
+        </nav>
+
+    </div>
    </header> 
-   <main></main>
+   <main>
+    <section class="hero">
+        <div class="container container--align-center">
+            <div class="hero__content">
+                <h1 class="hero__heading">Design, Collaborate, win.</h1>
+                <p class="hero__body">Introducing "Sedna". A responsive one page website, designed & developed by Peter Finlan, exclusively for Codrops.</p>
+                <div>
+                    <a href="#0" class="button btn--md btn--red">DOWNLOAD FOR FREE</a>
+                    <a href="#0" class="button btn--md btn--red-outline --margin-left-20">LEARN MORE</a>
+                </div>
+            </div>
+            <a href="#0" class="hero__down-arrow"><img src="/Images/down-arrow-icon.png" alt=""  class="img-fluid" width="12"></a>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+
+            <div class="feature">
+                <img src="/Images/pencil-icon.png" alt="" class="img__fluid feature__img" >
+                <div class="feature__content">
+                    <h3 class="feature__heading">EASILY CUSTOMISED</h3>
+                    <p class="feature__body">Easily customise Sedna to suit your start up, portfolio or product. Take advantage of the layered Sketch file and bring your product to life.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="/Images/bulb-icon.png" alt="" class="img__fluid feature__img" >
+                <div class="feature__content">
+                    <h3 class="feature__heading">MODERN DESIGN</h3>
+                    <p class="feature__body">Designed with modern trends and techniques in mind, Sedna will help your product stand out in an already saturated market.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="/Images/react-icon.png" alt="" class="img__fluid feature__img" >
+                <div class="feature__content">
+                    <h3 class="feature__heading">RESPONSIVE DEVELOPMENT</h3>
+                    <p class="feature__body">Built using the latest web technologies like html5, css3, and jQuery rest assured Sedna website will look smashing on every decide under the sun. </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="ipad">
+        <!-- <div class="container">
+
+            <img src="/Images/i-pad-air.png" alt="" class="ipad__image">
+            <img src="/Images/i-phone-6.png" alt="" class="iphone__image">
+
+            <div class="ipad__content_right">
+                <h3>Sedna will drive your product forward</h3>
+                <p>Present your product, start up, or portfolio in a beautifully modern way. Turn your visitors in to clients.</p>
+
+                <div class="feature">
+                    <img src="/Images/recycle-icon.png" alt="" class="img__fluid feature__img" >
+                    <div class="feature__content">
+                        <h3 class="feature__heading">RESPONSIVE DEVELOPMENT</h3>
+                        <p class="feature__body">Built using the latest web technologies like html5, css3, and jQuery rest assured Sedna website will look smashing on every decide under the sun. </p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="column">
+            <img src="/Images/i-pad-air.png" alt="" class="ipad__image">
+            <img src="/Images/i-phone-6.png" alt="" class="iphone__image">
+        </div>
+        <div class="column padding-right-270">
+            <div class="ipad__content_right">
+                <h3>Sedna will drive your product forward</h3>
+                <p>Present your product, start up, or portfolio in a beautifully modern way. Turn your visitors in to clients.</p>
+
+                <div class="feature">
+                    <img src="/Images/recycle-icon.png" alt="" class="img__fluid feature__img" >
+                    <div class="feature__content">
+                        <h3 class="feature__heading">UNIVERSAL & RESPONSIVE</h3>
+                        <p class="feature__body">Sedna is universal and will look smashing on any device.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section class="macbook">
+        <div class="col-left">
+            <h3>Designed using Sketch!</h3>
+            <p>Easily change/switch/swap every placeholder inside every image on Sedna with the included Sketch files. You’ll have this template customised to suit your business in no time! 
+
+            Nam vehicula malesuada lectus, interdum fringilla nibh. Duis aliquam vitae metus a pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget faucibus felis pharetra. Proin condimentum et leo quis fringilla. 
+            </p>
+            <a href="#0" class="button btn-md btn-red-outline">WHAT’S SKETCH?</a>
+        </div>
+
+        <div class="col-right">
+            <img src="/Images/macbook-pro.png" alt="">
+
+        </div>
+    </section> -->
+
+   </main>
    <footer></footer>
 </body>
 </html>
