@@ -116,7 +116,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    background-color: rgba(38, 43, 57, 0.9);
+    /* background-color: rgba(38, 43, 57, 0.9); */
     height: 100vh;
     text-align: center;
 }
@@ -205,13 +205,38 @@ body{
 
 /* Ipad section */
 
-.ipad{
+.twoColumn{
+}
+
+.bg--color-gray{
     background-color: #e6e9ea;
-    height: 759px;
+}
+
+.column__right{
+    margin-left: auto;
+    padding: 64px 304px 256px 63px;
+    width: 50%;
+}
+
+.ipad{
+    position: relative;
 }
 
 .ipad__content_right{
-    margin: 113px;
+    /* margin: 113px 0px 0px 113px; */
+}
+
+.ipad__heading{
+    font-size: 24px;
+}
+
+.ipad__body{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-top:10px;
+    padding-right: 70px;
+
 }
 
 
@@ -228,17 +253,18 @@ body{
     float: left;
 }
 
-.ipad::after{
+.twoColumn::after{
     content: "";
+    display: table;
     clear: both;
 }
 
 
 
 .ipad__image{
-    position: relative;
+    position: absolute;
     /* left:0; */
-    top: 118px;
+    /* top: 118px; */
     bottom: 0;
     /* margin-top: 118px; */
     height: 640px;
@@ -250,7 +276,7 @@ body{
 .iphone__image{
     position: absolute;
     left: 426px;
-    top: 1632px;
+    /* top: 1742px; */
     bottom: 0;
     /* margin-top: 367px; */
     height: 391px;
@@ -259,6 +285,151 @@ body{
     object-fit: cover;
 }
 
-.macbook{
-    height: 759px;
+.macbook-image{
+    margin: 114px 0px 0px 0px;
+    /* float: right; */
+}
+
+.feature--border-bottom-gray{
+    border-bottom: 1px solid #a0a8ac;
+}
+
+.margin--top-60{
+    margin-top: 60px;
+}
+
+.margin--top-20{
+    margin-top: 20px;
+}
+
+.padding--bottom-20{
+    padding-bottom: 20px;
+}
+
+/* change the names and center align the div later */
+
+.macbook-heading{
+    margin: 206px 0px 0px 0px;
+    font-size: 24px;
+}
+
+.macbook-body{
+    margin: 22px 0px 0px 0px;
+    font-weight: 300;
+}
+
+.macbook-btn{
+    display: inline-block;
+    margin: 42px 0px 0px 0px;
+    padding: 11px 35px;
+}
+.macbook-col{
+    padding-left: 281px;
+
+}
+
+.macbook-image{
+    float: right;
+}
+
+.macbook-column{
+    width: 50%;
+    padding: 0px 0px 100px 0px;
+
+}
+
+.sketch{
+    background-image: 
+    /* top, transparent gray */
+    linear-gradient(
+    rgba(61, 67, 81,0.8),
+    rgba(61, 67, 81,0.8)
+    ),
+    url(Images/low-poly-bg.webp);
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    clear: both;
+    padding: 98px 0px 461px 0px;
+    position: relative;
+}
+
+/* sketch section */
+
+.sketch-heading{
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+.font-weight-300{
+    font-weight: 300;
+}
+
+.font-color-orange{
+    color:#f69d52
+}
+
+.font-color-rouge{
+    color: #b11332;
+}
+
+.sketch-body{
+    margin-top: 20px;
+    color: #acb1b4;
+    line-height: 1.56;
+    font-weight: 300;
+} 
+
+.sketch-btn{
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 64px;
+}
+
+.sketch-icon{
+    position: absolute;
+    bottom: -62px;
+    left: 44%;
+}
+
+/* showcase starts */
+
+.showcase{
+    padding: 178px 0px 108px 0px;
+}
+
+.showcase__heading{
+    font-size: 24px;
+    font-weight: normal;
+    color: var(--charcoal-grey);
+    margin-bottom: 82px;
+    line-height: normal;
+}
+
+.showcase__body{
+    display: inline-block;
+    width: 45%;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.padding--right-97{
+    padding-right: 97px;
+}
+.padding--left-97{
+    padding-left: 97px;
+}
+
+.showcase__body-heading{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.border-right-gray{
+    border-right: 1px solid #e6e9ea;
 }
