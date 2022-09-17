@@ -172,7 +172,7 @@ body{
       rgba(38, 43, 57, 0.9)
     ),
     /* background image */
-    url(/Images/hero-image-01.png);
+    url(./Images/hero-image-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -391,7 +391,7 @@ body{
     rgba(61, 67, 81,0.8),
     rgba(61, 67, 81,0.8)
     ),
-    url(Images/low-poly-bg.webp);
+    url(.Images/low-poly-bg.webp);
     height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
