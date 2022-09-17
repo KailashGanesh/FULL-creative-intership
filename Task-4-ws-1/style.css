@@ -6,7 +6,13 @@
     --main-white-color-80: rgba(255, 255, 255, 0.2);
     --charcoal-grey:#3d4351;
     --grey-blue:#607286;
-}
+
+    --grey-blue:# ;
+    --dark-slate-blue-70:# ;
+    --cool-grey:# ;
+    --steel-grey:# ;
+    --slate-grey-two:# ;
+    }
 
 *{
     padding: 0;
@@ -17,6 +23,86 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Proper BEM Css Classes Start*\
+
+/* Button mix start */
+
+.btn{
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* Button sizes */
+.btn--xsm{padding: 7px 30px;}
+.btn--sm{padding: 11px 35px;}
+.btn--md{padding: 18px 36px;}
+.btn--long{padding: 14px 144px;}
+
+/* button color and shape */
+.btn--outline-white-curve{
+    color: var(--main-white-color);
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid var(--main-white-color);
+}
+
+.btn--solid-red-curve{
+    color: var(--main-white-color);
+    background-color: var(--main-red-color);
+    border-radius: 40px;
+}
+
+.btn--outline-red-curve{
+    color: var(--main-red-color);
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid var(--main-red-color);
+}
+
+.btn--solid-red-rect{
+    color: var(--main-red-color);
+    background-color: var(--main-red-color);
+}
+/* Button mix end */
+
+/* Heading Classes Start */
+.heading-xxl{
+    font-size: 60px;
+    line-height: normal;
+    font-weight: 400;
+}
+
+.heading-xl{
+    font-size: 40px;
+    line-height: normal;
+    font-weight: 300;
+}
+
+.heading-lg{
+    font-size: 24px;
+    line-height: normal;
+    font-weight: normal;
+}
+
+.heading-md{
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.heading-italic{
+    font-style: italic;
+}
+/* Heading Classes End */
+
+.text-white{
+    color: var(--main-white-color);
+}
+
+/* Proper BEM Css Classes End*\
+
+
 /* container */
 
 .container{
@@ -74,33 +160,8 @@ body{
 .header__right {
     float: right;
     /* margin: 0px 0px 0px 580px; */
-    
 }
 
-/* button mix */
-.button{
-    border-radius: 40px;
-    text-decoration: none;
-}
-
-.btn--sm{ padding: 7px 30px; }
-
-.btn--md{ padding: 18px 36px; }
-
-.btn--red{
-    background-color: #ff5274;
-    color: white;
-}
-
-.btn--red-outline{
-    border: 1px solid var(--main-red-color);
-    color: var(--main-red-color);
-}
-
-.btn--white-outline{
-    border: 1px solid var(--main-white-color);
-    color: var(--main-white-color);
-}
 
 /* hero */
 .hero{
@@ -112,11 +173,9 @@ body{
     ),
     /* background image */
     url(/Images/hero-image-01.png);
-    /* background: url(/Images/hero-image-01.png) no-repeat center center fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    /* background-color: rgba(38, 43, 57, 0.9); */
     height: 100vh;
     text-align: center;
 }
@@ -130,11 +189,7 @@ body{
     height: 100%;
 }
 
-.hero__heading{
-    color: var(--main-white-color);
-    font-size: 60px;
-    font-weight: 400;
-}
+.hero__heading{ }
 
 .hero__body {
     color: var(--main-white-color);
@@ -182,10 +237,7 @@ body{
 }
 
 .feature__heading{
-    font-size: 15px;
-    font-weight: 600;
     color: var(--charcoal-grey);
-    /* display:inline-block; */
     margin: 0;
     margin-left: 60px;
 }
@@ -226,9 +278,7 @@ body{
     /* margin: 113px 0px 0px 113px; */
 }
 
-.ipad__heading{
-    font-size: 24px;
-}
+.ipad__heading{ }
 
 .ipad__body{
     font-size: 15px;
@@ -308,10 +358,7 @@ body{
 
 /* change the names and center align the div later */
 
-.macbook-heading{
-    margin: 206px 0px 0px 0px;
-    font-size: 24px;
-}
+.macbook-heading{ }
 
 .macbook-body{
     margin: 22px 0px 0px 0px;
@@ -324,8 +371,7 @@ body{
     padding: 11px 35px;
 }
 .macbook-col{
-    padding-left: 281px;
-
+    padding: 206px 0px 199px 281px;
 }
 
 .macbook-image{
@@ -393,7 +439,8 @@ body{
 .sketch-icon{
     position: absolute;
     bottom: -62px;
-    left: 44%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* showcase starts */
@@ -411,10 +458,14 @@ body{
 }
 
 .showcase__body{
-    display: inline-block;
-    width: 45%;
+    /* display: inline-block; */
+    /* width: 45%; */
     font-weight: 300;
     line-height: 2;
+    column-count: 2;
+    width: 100%;
+    column-gap: 97px;
+    column-rule: 1px solid #e6e9ea;
 }
 
 .padding--right-97{
@@ -432,4 +483,13 @@ body{
 
 .border-right-gray{
     border-right: 1px solid #e6e9ea;
+}
+
+.gallery{
+   margin:108px 0px 0px 0px; 
+}
+
+.gallery__item{
+    width: 33.33%;
+    display: inline-block;
 }
