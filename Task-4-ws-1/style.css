@@ -101,6 +101,7 @@ body{
     color: var(--main-white-color);
 }
 
+.pd-20{padding:20px;}
 /* Proper BEM Css Classes End*\
 
 
@@ -392,7 +393,7 @@ body{
     rgba(61, 67, 81,0.8),
     rgba(61, 67, 81,0.8)
     ),
-    url(.Images/low-poly-bg.webp);
+    url(./Images/low-poly-bg.webp);
     height: 500px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -552,6 +553,7 @@ body{
 
 .slider__dots{
     margin: 96px 0px 0px 0px;
+    font-size: 0;
 }
 
 .slider__dot{
@@ -567,16 +569,84 @@ body{
     background-color: black;
 }
 
-.slider__arrow-left{
+.slider__arrow{
     position: absolute;
-    left: 57px;
-    top: 50%;
+    text-decoration: none;
+    color: white;
     font-size: 20px;
+    top:50%;
+    transform: translateY(-50%);
 }
 
-.slider__arrow-right{
-    position: absolute;
+.slider__arrow--left{
+    left: 57px;
+}
+
+.slider__arrow--right{
     right: 57px;
-    top:50%;
-    font-size: 20px;
+}
+
+
+/* footer */
+
+.footer{
+    font-size: 0;
+    vertical-align: top;
+}
+
+.footer__border{
+    background-color: #495061;
+    color: white;
+    text-align: right;
+}
+
+.footer__nav{
+    border-top: 1px solid white;
+}
+
+.footer__nav__item{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__border-arrow{
+    background-color: #3d4351;
+    display: inline-block;
+    margin-right: 20%;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.twitter-link{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #1ab4ef;
+}
+
+.facebook-link{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: #3b5898;
+}
+
+
+.col60{
+    display: inline-block;
+    background-color: #3d4351;
+    color: white;
+    width: 60%;
+    font-size: 14px;
+    padding: 119px 0px 161px 190px;
+}
+
+.col40{
+    display: inline-block;
+    background-color: #373d4a;
+    width: 40%;
+    color: white;
+    font-size: 14px;
+    padding: 132px 0px 121px 0px;
 }
