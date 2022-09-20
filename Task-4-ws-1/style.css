@@ -76,6 +76,25 @@ body {
     background-color: var(--main-red-color);
     border: 0;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn--outline-white-curve:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn--solid-red-curve:hover{
+    background-color: #ea4062;
+}
+
+.btn--outline-red-curve:hover{
+    background-color: #ea4062;
+    color: white;
+}
+
+.btn--solid-red-rect:hover{
+    background-color: #ea4062;
 }
 
 /* Button mix end */
@@ -110,6 +129,8 @@ body {
 }
 
 /* Heading Classes End */
+
+/* utility classes */
 
 .text-white {
     color: var(--main-white-color);
