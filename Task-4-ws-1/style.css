@@ -130,6 +130,15 @@ body {
 
 /* Heading Classes End */
 
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: var(--main-red-color);
+}
+
 /* utility classes */
 
 .text-white {
@@ -241,6 +250,12 @@ body {
     bottom: 0;
     top: 57vh;
     width: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.hero__down-arrow:hover{
+    color: var(--main-red-color);
 }
 
 /* miss */
@@ -761,6 +776,10 @@ body {
     position: relative;
 }
 
+.twitter-link:hover{
+    background-color:#188ab7 ;
+}
+
 .social-img {
     position: absolute;
     top: 50%;
@@ -774,6 +793,10 @@ body {
     height: 60px;
     background-color: #3b5898;
     position: relative;
+}
+
+.facebook-link:hover{
+    background-color: #2c4274;
 }
 
 
