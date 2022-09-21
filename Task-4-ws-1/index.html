@@ -18,7 +18,7 @@
                 <img src="./Images/sedna-logo.png" alt="Sedna Logo" class="header__logo-img">
             </a>
 
-            <nav class="header__nav header__items">
+            <nav class="header__nav">
 
 
                 <a href="#features" class="header__link link">FEATURES</a>
@@ -45,11 +45,13 @@
                     <h1 class="hero__heading heading-xxl text-white">Design, collaborate, win.</h1>
                     <p class="hero__body">Introducing "Sedna". A responsive one page website, designed & developed by
                         Peter Finlan, exclusively for Codrops.</p>
-                    <div>
+                    <div class="hero__buttons">
                         <a href="#0" class="btn btn--md btn--solid-red-curve hero__btn">DOWNLOAD FOR FREE</a>
                         <a href="#0" class="btn btn--md btn--outline-red-curve mrl-20 hero__btn">LEARN MORE</a>
                     </div>
-                    <a href="#features" class="hero__down-arrow"><i class="fa-solid fa-angle-down"></i> </a>
+                    <a href="#features" class="hero__down-arrow">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
                 </div>
             </div>
         </section>
@@ -141,7 +143,8 @@
                         files. You’ll have this template customised to suit your business in no time!
                     </p>
                     <p class="macbook-body">
-                        Nam vehicula malesuada lectus, <span class="font-color-rouge">interdum</span> fringilla nibh. Duis
+                        Nam vehicula malesuada lectus, <span class="font-color-rouge">interdum</span> fringilla nibh.
+                        Duis
                         aliquam vitae metus a pharetra. Lorem
                         ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum augue quis augue ornare, eget
                         faucibus felis pharetra. Proin condimentum et leo quis fringilla.
@@ -173,7 +176,7 @@
         <section class="showcase">
             <div class="container">
                 <h3 class="showcase__heading">Showcase your smashing product with Sedna</h3>
-                <div class="showcase__body">
+                <!-- <div class="showcase__body">
                     <h4 class="showcase__body-heading">EXCLUSIVE TO CODROPS</h4>
                     <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -184,6 +187,32 @@
                         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                         mollit anim id est laborum.</p>
+                </div> -->
+                <div class="showcase__body twoColumn">
+                    <div class="column">
+                        <h4 class="showcase__body-heading text-left">
+                            EXCLUSIVE TO CODROPS
+                        </h4>
+                        <p class="text-left">
+                            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="column">
+                        <h4 class="showcase__body-heading text-left">
+                            SPREADING PIXELS AROUND THE WORLD
+                        </h4>
+                        <p class="text-left">
+                            Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -191,26 +220,34 @@
                 <div class="gallery__item col3">
                     <img src="./Images/product-photo.png" alt="" class="img-fluid">
                     <p class="heading-md gallery__heading">PRODUCT</p>
-                    <p class="heading-md gallery__body body-text">Getting started with Sedna <i
-                            class="fa-solid fa-chevron-right"></i></p>
+                    <a href="#0" class="heading-md gallery__body body-text link">
+                        Getting started with Sedna
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
                 <div class="gallery__item col3">
                     <img src="./Images/technology-photo.png" alt="" class="img-fluid">
                     <p class="heading-md gallery__heading">TECHNOLOGY</p>
-                    <p class="heading-md gallery__body body-text">Why IE8 support is deminishing <i
-                            class="fa-solid fa-chevron-right"></i></p>
+                    <a href="#0" class="heading-md gallery__body body-text link">
+                        Why IE8 support is deminishing
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
                 <div class="gallery__item col3">
                     <img src="./Images/product-sky-photo.png" alt="" class="img-fluid">
                     <p class="heading-md gallery__heading">PRODUCT</p>
-                    <p class="heading-md gallery__body body-text">Sedna tutorial: How to begin your… <i
-                            class="fa-solid fa-chevron-right"></i></p>
+                    <a href="#0" class="heading-md gallery__body body-text link">
+                        Sedna tutorial: How to begin your…
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
             </div>
 
-            <a href="#0" class="btn btn--sm btn--outline-red-curve showcase__btn">MORE NEWS</a>
+            <a href="#0" class="btn btn--sm btn--outline-red-curve showcase__btn">
+                MORE NEWS
+            </a>
         </section>
 
         <section class="slider text-white">
@@ -281,7 +318,6 @@
                 </a>
                 <a href="#0" class="facebook-link mrl-20">
                     <i class="fa-brands fa-facebook-f social-icon"></i>
-                    <!-- <img src="./Images/facebook-icon.png" alt="facebook" class="social-img"> -->
                 </a>
             </div>
         </div>
