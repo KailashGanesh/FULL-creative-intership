@@ -5,13 +5,12 @@
     --main-white-color: #ffffff;
     --main-white-color-80: rgba(255, 255, 255, 0.2);
     --charcoal-grey: #3d4351;
-    --grey-blue: #607286;
 
-    --grey-blue: #;
-    --dark-slate-blue-70: #;
-    --cool-grey: #;
-    --steel-grey: #;
-    --slate-grey-two: #;
+    --grey-blue: #607286;
+    --dark-slate-blue-70: rgba(28, 54, 83, 0.7);
+    --cool-grey: #acb1b4;
+    --steel-grey: #7a8387;
+    --cool-grey: #abc1b4;
 }
 
 * {
@@ -29,6 +28,7 @@ body {
 /* Button mix start */
 
 .btn {
+    display: inline-block;
     font-size: 13px;
     text-decoration: none;
     transition: 0.3s;
@@ -131,6 +131,20 @@ body {
 
 /* Heading Classes End */
 
+/* Body classes start */
+
+.body-text{
+    font-weight: 300;
+    font-style: normal;
+}
+
+.body--lg{font-size: 20px;}
+.body-md{font-size: 16px;}
+.body-sm{font-size: 15px;}
+
+
+/* Body classes End */
+
 .link{
     text-decoration: none;
     color: white;
@@ -151,13 +165,41 @@ body {
     padding: 20px;
 }
 
+.padding-right-270 {
+    padding: 0px 270px 0px 0px;
+}
+
+.padding-left-270 {
+    padding: 0px 0px 0px 270px;
+}
+
+.mrl-20{
+    margin-left: 20px;
+}
+
+.bottom-white-border-80 {
+    border-bottom: 1px solid var(--main-white-color-80);
+}
+
+.font-weight-300 {
+    font-weight: 300;
+}
+
+.font-color-orange {
+    color: #f69d52
+}
+
+.font-color-rouge {
+    color: #b11332;
+}
 /* Proper BEM Css Classes End*\
 
 
 /* container */
 
 .container {
-    width: 66%;
+    max-width: 1060px;
+    padding: 0px 20px 0px 20px  ;
     margin: auto;
 }
 
@@ -165,12 +207,12 @@ body {
 .header {
     background-color: transparent;
     position: absolute;
-    width: 100vw;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
-.--bottom-white-border-80 {
-    border-bottom: 1px solid var(--main-white-color-80);
-}
 
 .header__logo {
     display: inline-block;
@@ -202,13 +244,11 @@ body {
     font-size: 13px;
 }
 
-.--margin-left-20 {
-    margin-left: 20px;
-}
 
 .header__right {
-    float: right;
-    /* margin: 0px 0px 0px 580px; */
+    display: inline-block;
+    width: 65%;
+    text-align: right;
 }
 
 
@@ -217,20 +257,22 @@ body {
     background-image:
         /* top, transparent gray */
         linear-gradient(rgba(38, 43, 57, 0.9),
-            rgba(38, 43, 57, 0.9)),
-        /* background image */
-        url(./Images/hero-image-01.png);
+                        rgba(38, 43, 57, 0.9)),
+                        /* background image */
+                        url(./Images/hero-image-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 .container--align-center {
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .hero__content {
@@ -239,11 +281,16 @@ body {
 
 .hero__heading {}
 
+.hero__btn{
+    display: inline-block;
+}
+
 .hero__body {
     color: var(--main-white-color);
     font-weight: 300;
-    margin: 18px 0px 84px 0px;
-    padding: 0px 299px 0px 299px;
+    font-size: 20px;
+    max-width: 830px;
+    margin: 18px auto 84px auto;
 }
 
 .hero__down-arrow {
@@ -282,7 +329,6 @@ body {
 }
 
 .feature__img {
-    /* display:inline-block; */
     float: left;
 }
 
@@ -320,7 +366,7 @@ body {
 
 .column__right {
     margin-left: auto;
-    padding: 64px 304px 256px 63px;
+    padding: 64px 0px 256px 64px;
     width: 50%;
 }
 
@@ -328,9 +374,7 @@ body {
     position: relative;
 }
 
-.ipad__content_right {
-    /* margin: 113px 0px 0px 113px; */
-}
+.ipad__content_right { }
 
 .ipad__heading {}
 
@@ -344,13 +388,6 @@ body {
 }
 
 
-.padding-right-270 {
-    padding: 0px 270px 0px 0px;
-}
-
-.padding-left-270 {
-    padding: 0px 0px 0px 270px;
-}
 
 .column {
     width: 50%;
@@ -367,10 +404,7 @@ body {
 
 .ipad__image {
     position: absolute;
-    /* left:0; */
-    /* top: 118px; */
     bottom: 0;
-    /* margin-top: 118px; */
     height: 640px;
     width: 547px;
     object-position: left top;
@@ -380,9 +414,7 @@ body {
 .iphone__image {
     position: absolute;
     left: 426px;
-    /* top: 1742px; */
     bottom: 0;
-    /* margin-top: 367px; */
     height: 391px;
     width: 304px;
     object-position: left top;
@@ -391,7 +423,6 @@ body {
 
 .macbook-image {
     margin: 114px 0px 0px 0px;
-    /* float: right; */
 }
 
 .feature--border-bottom-gray {
@@ -417,6 +448,7 @@ body {
 .macbook-body {
     margin: 22px 0px 0px 0px;
     font-weight: 300;
+    line-height: 1.67;
 }
 
 .macbook-btn {
@@ -426,7 +458,7 @@ body {
 }
 
 .macbook-col {
-    padding: 206px 0px 199px 281px;
+    padding: 206px 0px 199px 0px;
 }
 
 .macbook-image {
@@ -443,15 +475,13 @@ body {
     background-image:
         /* top, transparent gray */
         linear-gradient(rgba(61, 67, 81, 0.8),
-            rgba(61, 67, 81, 0.8)),
-        url(./Images/low-poly-bg.webp);
-    height: 500px;
+                        rgba(61, 67, 81, 0.8)),
+                        url(./Images/low-poly-bg.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    clear: both;
-    padding: 98px 0px 461px 0px;
+    padding: 98px 0px 201px 0px;
     position: relative;
 }
 
@@ -464,17 +494,6 @@ body {
 }
 
 
-.font-weight-300 {
-    font-weight: 300;
-}
-
-.font-color-orange {
-    color: #f69d52
-}
-
-.font-color-rouge {
-    color: #b11332;
-}
 
 .sketch-body {
     margin-top: 20px;
@@ -503,7 +522,6 @@ body {
 .showcase {
     padding: 178px 0px 108px 0px;
     text-align: center;
-    /* position: relative; */
 }
 
 .showcase__heading {
@@ -516,8 +534,6 @@ body {
 }
 
 .showcase__body {
-    /* display: inline-block; */
-    /* width: 45%; */
     font-weight: 300;
     line-height: 2;
     column-count: 2;
@@ -542,10 +558,6 @@ body {
 }
 
 .showcase__btn {
-    /* position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%,-50%); */
     margin-top: 60px;
     display: inline-block;
 }
@@ -591,8 +603,7 @@ body {
     height: 80px;
     border-radius: 40px;
     border: 1px solid white;
-    -webkit-filter: grayscale(100%);
-    /* Safari 6.0 - 9.0 */
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
 }
 
@@ -669,18 +680,6 @@ body {
     border-radius: 5px;
 }
 
-/* .login__username::before{
-    font-family: "Font Awesome 6 Free";
-    content:"\f0e0";
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1;
-    text-rendering: auto;
-    font-weight: 900;
-    color: red;
-} */
-
 .login__password {
     display: inline-block;
     width: 410px;
@@ -714,14 +713,10 @@ body {
 }
 
 .lock-icon{
-
-    /* transform: translatex(calc(100%)); */
     border-right: 1px solid #e6e9ea;
     font-size: 18px; 
     color: var(--main-red-color);
     position: absolute;
-    /* top: 15px;
-    left: 20px; */
     padding: 0 15px 0 0;
     position: absolute;
     left: 17px;
@@ -775,18 +770,19 @@ body {
     width: 60px;
     height: 60px;
     background-color: #1ab4ef;
-    position: relative;
+    text-align: center;
 }
 
 .twitter-link:hover{
     background-color:#188ab7 ;
 }
 
-.social-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.social-icon {
+    font-size: 21px;
+    color: white;
+    text-align: center;
+    line-height: 3;
 }
 
 .facebook-link {
@@ -794,7 +790,7 @@ body {
     width: 60px;
     height: 60px;
     background-color: #3b5898;
-    position: relative;
+    text-align: center;
 }
 
 .facebook-link:hover{
@@ -803,21 +799,23 @@ body {
 
 
 .col60 {
-    display: inline-block;
+    float: left;
+    width: 60%;
+    min-height:426px;
     background-color: #3d4351;
     color: white;
-    width: 60%;
     font-size: 14px;
-    padding: 119px 0px 161px 190px;
+    padding: 118px 0px 0px 190px;
 }
 
 .col40 {
-    display: inline-block;
-    background-color: #373d4a;
+    float: left;
     width: 40%;
+    min-height:426px;
+    background-color: #373d4a;
     color: white;
     font-size: 14px;
-    padding: 144px 0px 161px 70px;
+    padding: 138px 0px 0px 70px;
 }
 
 .text-bold {
@@ -826,7 +824,6 @@ body {
 
 .footer__body {
     font-weight: 300;
-
 }
 
 .col40__heading {
