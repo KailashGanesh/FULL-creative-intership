@@ -254,7 +254,7 @@ header, img, nav, ul, li{
 .header__right {
     display: inline-block;
     width: 65%;
-    text-align: right;
+    text-align: end;
 }
 
 /* hero */
@@ -283,8 +283,6 @@ header, img, nav, ul, li{
 .hero__content {
     height: 100%;
 }
-
-.hero__heading {}
 
 .hero__btn{
     display: inline-block;
@@ -363,8 +361,15 @@ header, img, nav, ul, li{
 }
 
 /* Ipad section */
+.two-column{
+    
+}
 
-.twoColumn {}
+.two-column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .bg--color-gray {
     background-color: #e6e9ea;
@@ -380,9 +385,6 @@ header, img, nav, ul, li{
     position: relative;
 }
 
-.ipad__content_right { }
-
-.ipad__heading {}
 
 .ipad__body {
     font-size: 15px;
@@ -398,11 +400,6 @@ header, img, nav, ul, li{
     float: left;
 }
 
-.twoColumn::after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 
 
@@ -447,14 +444,12 @@ header, img, nav, ul, li{
 
 /* change the names and center align the div later */
 
-.macbook-heading {}
-
 .macbook__body {
     margin: 22px 0px 0px 0px;
     line-height: 1.67;
 }
 
-.macbook-btn {
+.macbook__btn {
     display: inline-block;
     margin: 42px 0px 0px 0px;
     padding: 11px 35px;
