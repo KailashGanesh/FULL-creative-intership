@@ -138,8 +138,8 @@ body {
 }
 
 .body--lg{font-size: 20px;}
-.body-md{font-size: 16px;}
-.body-sm{font-size: 15px;}
+.body--md{font-size: 16px;}
+.body--sm{font-size: 15px;}
 
 
 /* Body classes End */
@@ -292,8 +292,6 @@ header, img, nav, ul, li{
 
 .hero__body {
     color: var(--main-white-color);
-    font-weight: 300;
-    font-size: 20px;
     max-width: 830px;
     margin: 18px auto 0px auto;
 }
@@ -357,8 +355,6 @@ header, img, nav, ul, li{
 
 .feature__body {
     color: var(--grey-blue);
-    font-size: 15px;
-    font-weight: 300;
     line-height: 1.67;
     display: block;
     margin: 0;
@@ -453,9 +449,8 @@ header, img, nav, ul, li{
 
 .macbook-heading {}
 
-.macbook-body {
+.macbook__body {
     margin: 22px 0px 0px 0px;
-    font-weight: 300;
     line-height: 1.67;
 }
 
@@ -495,7 +490,7 @@ header, img, nav, ul, li{
 
 /* sketch section */
 
-.sketch-heading {
+.sketch__heading {
     font-size: 40px;
     color: #ffffff;
     font-weight: 500;
@@ -503,20 +498,19 @@ header, img, nav, ul, li{
 
 
 
-.sketch-body {
+.sketch__body {
     margin-top: 20px;
     color: #acb1b4;
     line-height: 1.56;
-    font-weight: 300;
 }
 
-.sketch-btn {
+.sketch__btn {
     display: inline-block;
     margin-top: 50px;
     /* margin-bottom: 64px; */
 }
 
-.sketch-icon {
+.sketch__icon {
     position: absolute;
     bottom: -62px;
     left: 50%;
@@ -542,21 +536,18 @@ header, img, nav, ul, li{
 }
 
 .showcase__body{
-    font-weight: 300;
     line-height: 2;
 }
 
-.padding--right-97 {
+.pd--r-97 {
     padding-right: 97px;
 }
 
-.padding--left-97 {
+.pd--l-97 {
     padding-left: 97px;
 }
 
 .showcase__body-heading {
-    font-size: 15px;
-    font-weight: 600;
     margin-bottom: 20px;
 }
 
@@ -620,8 +611,6 @@ header, img, nav, ul, li{
 }
 
 .slider__body {
-    font-size: 15px;
-    font-weight: 300;
     margin: 30px 0px 0px 0px;
 }
 
@@ -671,6 +660,7 @@ header, img, nav, ul, li{
 }
 
 .login__body {
+    color: var(--steel-grey);
     margin: 0px 0px 50px 0px;
 }
 
@@ -705,6 +695,8 @@ header, img, nav, ul, li{
 
 .login__btn {
     display: inline-block;
+    color: var(--main-white-color);
+    font-size: 13px;
 }
 
 .user-icon {
