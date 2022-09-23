@@ -124,9 +124,7 @@ body {
     font-weight: 600;
 }
 
-.heading-italic {
-    font-style: italic;
-}
+.heading-italic { font-style: italic; }
 
 /* Heading Classes End */
 
@@ -179,6 +177,8 @@ body {
 
 .font--size-reset{font-size: 0;}
 
+.text-bold { font-weight: 600; }
+
 /* miss */
 .img-fluid {
     width: 100%;
@@ -191,7 +191,8 @@ body {
 
 .container {
     max-width: 1040px;
-    padding: 0px 20px 0px 20px  ;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: auto;
 }
 
@@ -206,23 +207,6 @@ body {
     font-size: 0;
 }
 
-/* ul{
-    list-style-type: none;
-    margin: auto;
-    width: 1040px;
-}
-
-li a {
-    display: inline-block;
-    padding: 8px;
-    width: fit-content;
-}
-
-header, img, nav, ul, li{
-    display: inline-block;
-    vertical-align: middle;
-} */
-
 .header__logo {
     display: inline-block;
     vertical-align: middle;
@@ -234,40 +218,59 @@ header, img, nav, ul, li{
     height: auto;
 }
 
-.header__nav {
-    display: inline-block;
-    margin-left: 64px;
-    vertical-align: middle;
-    width: 80%;
-}
-
 .header__nav-bar {
-    padding: 43px 0px 30px 0px;
+    padding-top: 43px;
+    padding-bottom: 30px;
 }
 
 .header__link {
-    text-decoration: none;
     color: white;
     font-size: 13px;
 }
 
+.header_nav{
+    font-size: 0;
+}
+
+.nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33%;
+}
+
+.nav__item:nth-child(1){
+    width: 15%;
+}
+.nav__item:nth-child(2){
+    width: 30%;
+}
+.nav__item:nth-child(3){
+    width: 55%;
+}
+
 .header__right {
     display: inline-block;
-    width: 65%;
+    /* width: 65%; */
     text-align: end;
 }
 
 /* hero */
 .hero {
     background-image:
-        /* top, transparent gray */
+        
         linear-gradient(rgba(38, 43, 57, 0.9),
                         rgba(38, 43, 57, 0.9)),
-                        /* background image */
+                        
                         url(./Images/hero-image-01.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    /* background:
+    linear-gradient(rgba(38, 43, 57, 0.9), rgba(38, 43, 57, 0.9)),
+    url(./Images/hero-image-01.png),
+    no-repeat,
+    center ,center;  */
     height: 100vh;
     text-align: center;
     position: relative;
@@ -321,9 +324,14 @@ header, img, nav, ul, li{
 
 .feature {
     display: inline-block;
-    width: 33.33%;
+    width: calc((100% - 15px)/3);
     vertical-align: top;
-    padding-left: 5px;
+    /* padding-left: 5px; */
+    margin-right: 5px;
+}
+
+.feature:last-child{
+    margin-right: 0;
 }
 
 .feature--block{
@@ -362,7 +370,7 @@ header, img, nav, ul, li{
 
 /* Ipad section */
 .two-column{
-    
+
 }
 
 .two-column::after {
@@ -370,6 +378,11 @@ header, img, nav, ul, li{
     display: table;
     clear: both;
 }
+
+.two-column:first-child{
+    padding-right: 97px;
+}
+
 
 .bg--color-gray {
     background-color: #e6e9ea;
@@ -399,9 +412,6 @@ header, img, nav, ul, li{
     width: 50%;
     float: left;
 }
-
-
-
 
 .ipad__image {
     position: absolute;
@@ -534,13 +544,22 @@ header, img, nav, ul, li{
     line-height: 2;
 }
 
-.pd--r-97 {
+.showcase_col{
+    padding-right: 97px;
+}
+
+.showcase_col:last-child{
+    padding-left: 97px;
+    padding-right: 0px;
+}
+
+/* .pd--r-97 {
     padding-right: 97px;
 }
 
 .pd--l-97 {
     padding-left: 97px;
-}
+} */
 
 .showcase__body-heading {
     margin-bottom: 20px;
@@ -812,9 +831,6 @@ header, img, nav, ul, li{
     padding: 138px 0px 0px 70px;
 }
 
-.text-bold {
-    font-weight: 600;
-}
 
 .footer__body {
     font-weight: 300;
