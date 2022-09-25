@@ -13,30 +13,54 @@
 <body>
     <header class="header">
         <div class="container">
-            <nav class="nav">
+            <nav class="nav clear-fix">
                 <ul class="nav__item">
                     <li>
                         <h1>
-                            Odigo
+                            <!-- Odigo logo -->
+                            <svg class="icon-odigo-logo">
+                                <use xlink:href="./dist/image.svg#icon-odigo-logo"></use>
+                            </svg>
                         </h1>
                     </li>
                 </ul>
-                <ul class="nav__item">
-                    <li><a href="#0">Articles</a></li>
-                    <li><a href="#0">Locations</a></li>
-                    <li><a href="#0">Videos</a></li>
-                    <li><a href="#0">Sign in</a></li>
+                <ul class="desktop-hide nav__item">
+                    <li>
+                        <a onclick="openNav();" class="link">
+                            <svg class="icon-menu">
+                                <use xlink:href="./dist/image.svg#icon-menu"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__item mobile-hide">
+                    <li class="nav_items"><a href="#0" class="link">Articles</a></li>
+                    <li class="nav_items"><a href="#0" class="link">Locations</a></li>
+                    <li class="nav_items"><a href="#0" class="link">Videos</a></li>
+                    <li><a href="#0" class="link">Sign in</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="overlay" id="mobile-menu">
+        <div class="overlay__closeBtn">
+            <a onclick="closeNav()" class="link">&times;</a>
+        </div>
+        <ul class="overlay__nav">
+            <li><a href="#0" onclick="closeNav()" class="link">Articles</a></li>
+            <li><a href="#0" onclick="closeNav()" class="link">Locations</a></li>
+            <li><a href="#0" onclick="closeNav()" class="link">Videos</a></li>
+            <li><a href="#0" onclick="closeNav()" class="link">Sign in</a></li>
+        </ul>
+    </div>
+
     <main>
         <section class="hero">
             <div class="container">
-                <article>
-                    <h1>Discover Amazing places in Japan</h1>
-                    <p>
+                <article class="hero__content">
+                    <h1 class="hero__heading heading--lg">Discover Amazing places in Japan</h1>
+                    <p class="hero__body body-text">
                         Jump off balcony, onto stranger's head. Chase ball of string
                         hide when guests come over. Being gorgeous with belly side
                         up i could pee on this if i had the energy but under the
