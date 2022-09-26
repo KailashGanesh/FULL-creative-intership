@@ -32,12 +32,18 @@ body{
     text-decoration: none;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 .btn--sm{
     padding:11px 19px;
 }
 .btn--lg{
     padding: 15px 39px;
+}
+
+.btn:hover{
+    background-color: #1665cc;
+    box-shadow: 5px 9px black;
 }
 
 /* body text */
@@ -246,6 +252,14 @@ body{
     display: inline-block;
     margin-right: 60px;
     /* margin-right: min(5%,60px); */
+}
+
+
+/* footer */
+
+.footer{
+    background-color: var(--dark-blue-grey);
+    color: var(--main-white-color);
 }
 
 @media only screen and (max-width: 1400px){
