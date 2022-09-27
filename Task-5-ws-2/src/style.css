@@ -390,6 +390,15 @@ body{
     font-size: 16px;
 }
 
+.arrow-icon{
+    fill: var(--bright-blue-color);
+    width: 1em;
+    height: 1em;
+    margin-left: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .twoCol-hide{
     display: none;
 }
