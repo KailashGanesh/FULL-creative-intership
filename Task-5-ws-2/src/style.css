@@ -339,7 +339,13 @@ body{
 }
 
 .grid img{
+    cursor: pointer;
     filter: brightness(50%);
+    transition: all 0.3s ease 0s;
+}
+
+.grid img:hover{
+    filter: brightness(70%);
 }
 
 .grid__bodyText{
@@ -388,10 +394,15 @@ body{
     display: inline-block;
     margin: 60px 0px 0px 0px;
     font-size: 16px;
+    fill: var(--bright-blue-color);
+}
+
+.twoCol__link:hover{
+    color: #020ebb;
+    fill: #0b02bb;
 }
 
 .arrow-icon{
-    fill: var(--bright-blue-color);
     width: 1em;
     height: 1em;
     margin-left: 1em;
