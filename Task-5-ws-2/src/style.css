@@ -707,6 +707,9 @@ body{
 
 @media only screen and (max-width: 450px) {
 
+    .heading--lg{
+        font-size: 40px;
+    }
     /* features */
     .features__container{
         margin-top: -60px;
