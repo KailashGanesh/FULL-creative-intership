@@ -432,8 +432,14 @@ body {
     object-fit: cover;
 }
 
+.macbook{
+    position: relative;
+}
+
 .macbook-image {
-    margin: 114px 0px 0px 0px;
+    position: absolute;
+    right: 0;
+    top: 114px;
 }
 
 .border--bottom-gray {
@@ -470,7 +476,8 @@ body {
 }
 
 .macbook-image {
-    float: right;
+    /* float: right; */
+    text-align: right;
 }
 
 .macbook-column {
