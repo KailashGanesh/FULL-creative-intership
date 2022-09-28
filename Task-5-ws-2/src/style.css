@@ -198,7 +198,8 @@ body{
 /* hero */
 
 .hero{
-    background: url(../assets/img/hero-background.jpeg) no-repeat center center;
+    /* background: url(../assets/img/hero-background.jpeg) no-repeat center center; */
+    background: url(../assets/img/hero-background-optimized.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100vh;
