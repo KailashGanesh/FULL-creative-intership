@@ -7,7 +7,7 @@ function closeNav(){
 }
 
 function changeNavColor(color){
-    let white = "rgb(0,0,0,0.6)"
+    let white = "rgb(0,0,0,0.9)"
     if (color == "white"){
         header.style.backgroundColor = white;
         header.style.position = "fixed";
