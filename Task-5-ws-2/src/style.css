@@ -249,6 +249,10 @@ body{
     background-color: #ffffff;
 }
 
+.form__input:not(:placeholder-shown) + .circle{
+    background-color: #ffffff;
+}
+
 .circle{
     width: 20px;
     height: 20px;
