@@ -245,6 +245,10 @@ body{
     outline-width: 0;
 }
 
+.form__input:focus + .circle{
+    background-color: #ffffff;
+}
+
 .circle{
     width: 20px;
     height: 20px;
