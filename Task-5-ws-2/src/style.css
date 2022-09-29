@@ -751,6 +751,9 @@ body{
     .heading--lg{
         font-size: 40px;
     }
+    .heading--md {
+        font-size: 29px;
+    }
     /* features */
     .features__container{
         margin-top: -60px;
