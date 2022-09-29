@@ -276,14 +276,14 @@ body{
 
 .features__container{
     box-shadow: 0 2px 20px 0 rgba(21, 24, 36, 0.16);
-    display: block;
-    margin-top: -130px;
     background-color: #ffffff;
+    font-size: 0;
+    width: 90%;
+    max-width: 1322px;
+    border-radius: 10px;
     padding-top: 40px;
     padding-bottom: 93px;
-    font-size: 0;
-    border-radius: 10px;
-    width: 90%;
+    margin: -130px auto 0px auto;
 }
 
 .features__container .heading--md{
