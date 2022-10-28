@@ -9,4 +9,5 @@
 
 ### Second month
 
-- [AutoCryp website 3](https://kailashganesh.github.io/autocrypt/)
+- [AutoCryp - website 3](https://kailashganesh.github.io/autocrypt/)
+- [CasaRoyal - website 3](https://kailashganesh.github.io/casaroyal/)
