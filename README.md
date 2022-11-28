@@ -15,4 +15,4 @@
 ### Third month
 
 - [Umail - webapp 1](https://kailashganesh.github.io/Umail/)
-- [fair rate - website 5](https://kailashganesh.github.io/fair-rate/)
+- [fair rate - website 5](https://kailashganesh.github.io/autocrypt/)
